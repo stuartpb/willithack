@@ -1,212 +1,210 @@
-.moe:
-  name: .moe
-  image: "File:.moe logo.svg"
+moe:
+  type: gtld
   introduced: "2013"
   registry: Interlink
   sponsor: None
-  intendeduse: "The marketing of products or services deemed ''[[Moe (slang)|moe]]''"
-  restrictions: None
-  document: "[http://www.icann.org/en/about/agreements/registries/moe ICANN registry agreement]"
-  website: "{{URL|http://nic.moe/en/}}"
-.com:
-  name: .com
-  background: "#FC1"
-  image: "[[File:DotCom Logo OnWhite.jpg|250px|.com]]"
+  intendeduse: "The marketing of products or services deemed [moe](https://en.wikipedia.org/wiki/Moe_%28slang%29)"
+  structure:
+    second: open
+  document: http://www.icann.org/en/about/agreements/registries/moe
+  website: http://nic.moe/en/
+com:
+  type: gtld
   introduced: "1985"
-  registry: "[[Verisign]]"
+  registry: Verisign
   sponsor: None
-  intendeduse: "[[Commerce|Commercial]] entities (worldwide)"
+  intendeduse: Commercial entities
   actualuse: Used for virtually any commercial or non-commercial website and is generally accepted as the standard for TLDs
-  restrictions: None
-  structure: Registrations at second level permitted
-  document: "RFC 920; RFC 1591; [http://www.icann.org/tlds/agreements/verisign/com-index.htm ICANN registry agreement]"
-  disputepolicy: "[[UDRP]]"
-  website: "[http://www.verisigninc.com/en_US/products-and-services/domain-name-services/registry-services/com-domain-names/index.xhtml Verisign COM NET Registry]"
+  structure:
+    second: open
+  document: RFC 920; RFC 1591; http://www.icann.org/tlds/agreements/verisign/com-index.htm
+  disputepolicy: UDRP
+  website: http://www.verisigninc.com/en_US/products-and-services/domain-name-services/registry-services/com-domain-names/index.xhtml
   dnssec: "yes"
-.tv:
-  name: .tv
-  background: "#CCF"
-  image: "[[File:Verisign-dottv-logo.jpg|250px|.tv]]"
+tv:
+  type: cctld
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
   status: Active
-  registry: "The .tv Corporation (a [[Verisign]] company)"
-  sponsor: "Government of [[Tuvalu]]"
-  intendeduse: "Entities connected with {{TUV}}"
-  actualuse: "Marketed commercially for use in [[television]] or [[video]]-related sites; can be registered and used for any purpose"
-  restrictions: None
-  structure: "Direct second-level registrations are allowed; some second-level domains such as '''gov.tv''' are reserved for third-level domains representing entities in [[Tuvalu]]"
-  disputepolicy: "[[UDRP]]"
-  website: "[http://www.watch.tv/ TV registry]"
-.fm:
-  name: .fm
-  background: "#CCF"
-  image: "[[Image:Title fm.png|220px|dotFM - Get a Great Sounding Web Address!]]"
+  registry: The .tv Corporation (a Verisign company)
+  sponsor: Government of Tuvalu
+  actualuse: Marketed commercially for use in television or video-related sites; can be registered and used for any purpose
+  structure:
+    second:
+      notes: some second-level domains such as gov.tv are reserved for third-level domains representing entities in Tuvalu
+    third:
+      domains:
+        gov:
+          restrictions:
+            registrant: Restricted to the government of Tuvalu
+  disputepolicy: UDRP
+  website: http://www.watch.tv/
+fm:
+  type: cctld
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
   status: Active
-  registry: "[[dotFM]] ([[BRS Media Inc.]])"
-  sponsor: "[[FSM Telecommunications Corporation]]"
-  intendeduse: "Entities connected with {{flag|Federated States of Micronesia}}"
-  actualuse: "Much use related to [[FM radio]]; little related to FSM"
-  restrictions: None
-  structure: Registrations are available directly at second level
-  website: "[http://www.dot.fm/ dotFM]"
-.am:
-  name: .am
-  background: "#CCF"
+  registry: dotFM (BRS Media Inc.)
+  sponsor: FSM Telecommunications Corporation
+  actualuse: Much use related to FM radio; little related to FSM
+  structure:
+    second: open
+  website: http://www.dot.fm/
+am:
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
-  registry: "[https://www.amnic.net AMNIC]"
-  sponsor: "[http://www.isoc.am ISOC-AM] (local chapter of [[Internet Society]])"
-  intendeduse: "Entities connected with {{flag|Armenia}}"
+  registry: https://www.amnic.net
+  sponsor: http://www.isoc.am
   actualuse: Still used largely in Armenia despite being marketed as global domain
-  restrictions: "Some generic names reserved; registry reserves right to revoke registrations due to spam, obscenity, or other illegal or immoral activity"
-  structure: Registrations permitted directly at second level
-  document: "[https://www.amnic.net/policy/ AM TLD policy]"
-  disputepolicy: "[[UDRP]]"
-  website: "[https://www.amnic.net/ AMNIC]"
+  structure:
+    second:
+      notes: Some generic names reserved
+      restrictions:
+        content: registry reserves right to revoke registrations due to spam, obscenity, or other illegal or immoral activity
+  document: https://www.amnic.net/policy/
+  disputepolicy: UDRP
+  website: https://www.amnic.net/
   dnssec: "yes"
-.cd:
-  name: .cd
-  background: "#CCF"
-  image: "[[Image:Dotcd.png|.cd -- Dot CD Domains]]"
+cd:
+  type: cctld
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
   status: Active
-  registry: "[[NIC Congo]]"
-  sponsor: "[[Interpoint SARL]]"
-  intendeduse: "Entities connected with the {{COD}}"
-  actualuse: "Not that popular, but used for a miscellany of sites, some related to the Congo and some about music CDs"
-  restrictions: None
-  structure: Registrations permitted at second level
-  disputepolicy: "[[UDRP]]"
-  website: "[http://www.nic.cd/ www.nic.cd]"
-.hk:
-  name: .hk
-  background: "#CCF"
-  image: "[[File:Logo of the HKIRC.png|200px|.hk]]"
+  registry: NIC Congo
+  sponsor: Interpoint SARL
+  actualuse: Not that popular, but used for a miscellany of sites, some related to the Congo and some about music CDs
+  structure:
+    second: open
+  disputepolicy: UDRP
+  website: http://www.nic.cd/
+hk:
+  type: cctld
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
   status: Active
-  registry: "[http://www.hkirc.hk/ Hong Kong Internet Registration Corporation Ltd.]"
-  intendeduse: "Entities connected with:\n*{{flag|British Hong Kong|1959}}\n:(1990–1997)\n*{{flag|HKG|name=Hong Kong Special Administrative Region, People's Republic of China}}\n:(1997–present)"
+  registry: http://www.hkirc.hk/
   actualuse: Popular in Hong Kong
-  restrictions: "Second-level registrations open to all Generic '.hk' domain categories; Specific third-level registrations require identity documents depending on varying rules for each sector"
-  document: "[https://www.hkirc.hk/content.jsp?&id=3&#!/6 Rules for .hk domains and subdomains]"
-  disputepolicy: "[https://www.hkdnr.hk/dispute_resolution/dispute_resolution_policy.jsp?path=dispute_resolution&item=0 Dispute resolution policy]"
-  website: "[https://www.hkdnr.hk/ www.hkirc.hk]"
-.org:
-  name: .org (Domain Name)
-  background: "#FC0"
-  image: "[[Image:DOT ORG (ORG Marketing Resources logo).png|200px]]"
+  structure:
+    second: open
+    third:
+      notes: Specific third-level registrations require identity documents depending on varying rules for each sector
+      restrictions:
+      domains:
+        com:
+          restrictions:
+            registrant: Restricted to commercial entities registered in Hong Kong
+        net:
+          restrictions:
+            registrant: Restricted to network service providers with a licence from the OFTA
+        org:
+          restrictions:
+            registrant: Restricted to non-profit organisations registered or approved by the Hong Kong Government
+        gov:
+          restrictions:
+            registrant: Restricted to Departments or Bureaux of the Hong Kong Government
+        edu:
+          restrictions:
+            registrant: Restricted to educational institutions or registered schools in Hong Kong
+        idv:
+          restrictions:
+            registrant: Restricted to HKID cardholders aged 11 or above
+  document: https://www.hkirc.hk/content.jsp?&id=3&#!/6
+  disputepolicy: https://www.hkdnr.hk/dispute_resolution/dispute_resolution_policy.jsp?path=dispute_resolution&item=0
+  website: https://www.hkdnr.hk/
+org:
+  type: gtld
   introduced: "1985"
-  type: "[[Generic top-level domain]]"
   status: Active
-  registry: "[[Public Interest Registry]] (technical service by [[Afilias]])"
-  sponsor: "Not technically sponsored, but PIR is connected with the [[Internet Society]]"
+  registry: Public Interest Registry (technical service by Afilias)
+  sponsor: Not technically sponsored, but PIR is connected with the Internet Society
   intendeduse: Miscellaneous organizations not fitting in other categories (generally noncommercial)
   actualuse: Nonprofits; personal sites; open-source projects; sometimes used by commercial entities
-  restrictions: None
-  structure: Registrations at second level permitted
-  document: "RFC 920; RFC 1591; [http://www.icann.org/tlds/agreements/org/ ICANN registry agreement]"
-  disputepolicy: "[[UDRP]]"
-  website: "[http://www.pir.org/ Public Interest Registry]"
+  structure:
+    second: open
+  document: RFC 920; RFC 1591; [http://www.icann.org/tlds/agreements/org/
+  disputepolicy: UDRP
+  website: http://www.pir.org/
   dnssec: "yes"
-.nl:
-  name: .nl
-  background: "#CCF"
-  image: "[[Image:Sidn.png|.nl -- Stichting Internet Domeinregistratie Nederland]]"
+nl:
+  type: cctld
   introduced: "April 25, 1986"
-  type: "[[Country code top-level domain]]"
   status: Active
-  registry: "[[SIDN]]"
-  sponsor: "[[SIDN]]"
-  intendeduse: "Entities connected with the {{flag|Netherlands}}"
+  registry: SIDN
+  sponsor: SIDN
   actualuse: Very popular in the Netherlands
   structure: Registrations are taken directly at the second level
-  document: "[http://www.nic.nl/ace.php/p,728,2682,10309,regulations-registration_pdf Regulations for registration of .nl domain names]"
-  disputepolicy: "<ref>{{cite web|url=http://www.sidn.nl/ace.php/c,727,5855,,,,Beroep_tegen_beslissingen_van_SIDN.html |title=Welkom! - SIDN |publisher=SIDN.nl |date=2011-03-03 |accessdate=2012-09-13}}</ref>"
-  website: "[http://www.sidn.nl/ SIDN]"
+  document: http://www.nic.nl/ace.php/p,728,2682,10309,regulations-registration_pdf
+  disputepolicy: http://www.sidn.nl/ace.php/c,727,5855,,,,Beroep_tegen_beslissingen_van_SIDN.html
+  website: http://www.sidn.nl/
   dnssec: "yes"
-.eu:
-  name: .eu
-  background: "#CCF"
-  image: "[[File:EURid.svg|130px|EURid]]"
+eu:
+  type: cctld
   introduced: "2005"
-  type: "[[Country code top-level domain|Country code]]"
   status: Active
-  registry: "[[EURid]]"
-  sponsor: "[[European Commission]]"
-  intendeduse: "{{flag|European Union}}"
-  actualuse: "Gradually increasing, mostly among sites with pan-European or cross-border intentions.([[.eu#Actual use|details]])"
-  restrictions: "Registrants must be located within the [[European Economic Area|EEA]]"
-  structure: Names are registered directly at second level
-  document: "[http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32004R0874:EN:NOT Commission Regulation (EC) No. 874/2004]"
-  disputepolicy: "[http://www.eurid.eu/en/eu-domain-names/disputes EU ADR]"
-  website: "[http://www.eurid.eu/ www.eurid.eu]"
+  registry: EURid
+  sponsor: European Commission
+  intendeduse: Entities connected with the European Union
+  actualuse: Gradually increasing, mostly among sites with pan-European or cross-border intentions.
+  structure:
+    second:
+      restrictions:
+        registrant: Registrants must be located within the European Economic Area
+  document: http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32004R0874:EN:NOT
+  disputepolicy: http://www.eurid.eu/en/eu-domain-names/disputes
+  website: http://www.eurid.eu/
   dnssec: "yes"
-.gov:
-  name: gov
-  background: "#FC0"
-  image: "[[Image:dotgov.gif|dot gov]]"
+gov:
+  type: stld
   introduced: "1985"
-  type: "[[Sponsored top-level domain]]"
   status: Active
-  registry: "[[General Services Administration]]"
+  registry: General Services Administration
   sponsor: General Services Administration
-  intendeduse: "[[Governmental]] entities"
-  actualuse: "[[Government of the United States|United States government]]; formerly only [[Federal government of the United States|federal government]] but later expanded to include [[State governments of the United States|state]] and [[Local government in the United States|local government]]"
-  restrictions: Must meet eligibility requirements and submit authorization letter
-  structure: Registrations at second level permitted
+  intendeduse: Governmental entities
+  actualuse: United States government; formerly only federal government but later expanded to include state and local government
+  structure:
+    second:
+      restrictions:
+        registrant: Must meet eligibility requirements and submit authorization letter
   document: RFC 920; RFC 1591; RFC 2146
   disputepolicy: None
-  website: "[http://dotgov.gov/ dotgov.gov]"
+  website: http://dotgov.gov/
   dnssec: "yes"
-.info:
-  name: info
-  background: "#FC0"
-  image: "[[Image:.info logo.png|230px|.info – Where the world goes for information]]"
+info:
+  type: gtld
   introduced: "2001"
-  type: "[[Generic top-level domain]]"
   status: Active
-  registry: "[[Afilias]]"
+  registry: Afilias
   sponsor: None
   intendeduse: Informational sites
-  actualuse: "A variety of uses, many information, some held by speculators"
-  restrictions: None
-  structure: Registrations at second level permitted
-  document: "[http://www.icann.org/tlds/agreements/info/ ICANN registry agreement]"
-  disputepolicy: "[[UDRP]], [http://arbiter.wipo.int/domains/gtld/info/sunrise/ Sunrise Challenge Policy (SCP)], Challenges of Last Resort (CLR)"
-  website: "[http://www.info.info/ info.info]"
+  actualuse: A variety of uses, many information, some held by speculators
+  structure:
+    second: open
+  document: http://www.icann.org/tlds/agreements/info/
+  disputepolicy: UDRP
+  website: http://www.info.info/
   dnssec: "yes"
-.coop:
-  name: coop
-  background: "#FCC"
-  image: "[[Image:Cooplogo.png|.coop -- one member. one vote. one domain.]]"
+coop:
+  type: stld
   introduced: "2001"
-  type: "[[Sponsored top-level domain]]"
   status: Active
-  registry: "[[Midcounties Co-operative]] operates the registry on behalf of [[Dotcooperation LLC|DotCooperation LLC]]"
-  sponsor: "[[Dotcooperation LLC|DotCooperation LLC]], a subsidiary of the [[National Cooperative Business Association]]"
+  registry: Midcounties Co-operative operates the registry on behalf of DotCooperation LLC
+  sponsor: DotCooperation LLC, a subsidiary of the National Cooperative Business Association
   intendeduse: Co-operatives
-  restrictions: Only co-operatives and associated organisations may register; eligibility is verified through organizations of co-operatives and verifiable materials provided by registrants
-  structure: Direct second-level registrations are allowed; some generic words are reserved by the Sponsor to be awarded to applicants with proposals that allow access to all relevant co-ops for their use
-  document: "[http://www.icann.org/tlds/agreements/coop/ ICANN registry agreement]"
-  disputepolicy: "[[UDRP]]"
-  website: "[http://www.nic.coop/ nic.coop]"
-.edu:
-  name: edu
-  background: "#FC0"
-  introduced: "1985"
-  type: "[[Sponsored top-level domain]]<ref name=IANA>{{cite web|url=http://www.iana.org/domains/root/db/edu.html | publisher=[[Internet Assigned Number Authority]]| work=Root Zone Database| title=Delegation Record for .EDU |accessdate=November 23, 2011}}</ref>"
+  structure:
+    second:
+      notes: some generic words are reserved by the Sponsor to be awarded to applicants with proposals that allow access to all relevant co-ops for their use
+      restrictions: Only co-operatives and associated organisations may register; eligibility is verified through organizations of co-operatives and verifiable materials provided by registrant
+  document: http://www.icann.org/tlds/agreements/coop/
+  disputepolicy: UDRP
+  website: http://www.nic.coop/
+edu:
+  type: stld
   status: Active
-  registry: "[[Educause]] (operated by [[VeriSign]])"
+  registry: Educause (operated by VeriSign)"
   intendeduse: Educational institutions
-  structure: Registrations at second level permitted
+  structure:
+    second:
+      restrictions:
+        registrants: Since 2001, new registrants to the domain have been required to be United States-affiliated institutions of higher education
   document: RFC 920; RFC 1591
-  website: "[http://www.educause.edu/ edu Home Page]"
+  website: http://www.educause.edu/
   dnssec: "yes"
 .int:
   name: int
@@ -277,7 +275,7 @@
   background: "#CDF"
   image: "<!-- Deleted image removed: [[Image:Dotus.gif|.us -- America's Internet Address]] -->"
   introduced: "1985"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NeuStar Inc.|Neustar]]"
   sponsor: "[[United States Department of Commerce]]"
@@ -297,7 +295,7 @@
   background: "#CCF"
   image: "[[Image:Dotca.png|240px|CIRA — Canadian Internet Registration Authority]]"
   introduced: "1987"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Canadian Internet Registration Authority]]"
   sponsor: "[[Government of Canada]]"
@@ -317,7 +315,7 @@
   background: "#CCF"
   image: "[[File:Dot TK logo.gif]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Dot TK (run by BV Dot TK)
   sponsor: "Government of [[Tokelau]] and Teletok"
@@ -332,7 +330,7 @@
   background: "#CCF"
   image: "<!--  Commented out because image was deleted: [[Image:NominetUKLogo.gif|Nominet.uk -- The UK Internet names organisation]] -->"
   introduced: "1985"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Nominet UK]]"
   sponsor: "[[Nominet UK]]"
@@ -360,14 +358,14 @@
   restrictions: None
   structure: Registrations at second level permitted
   document: "RFC 1591; [http://www.icann.org/tlds/agreements/net/net-registry-agreement-01jul05.pdf ICANN registry agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://verisigninc.com/en_US/products-and-services/domain-name-services/registry-services/net-domain-names/index.xhtml VeriSign NET Registry]"
   dnssec: "yes"
 .gb:
   name: .gb
   background: "#CCF"
   introduced: "1985"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Unused
   registry: "[[JANET(UK)]]"
   sponsor: "[[JANET(UK)]]"
@@ -399,7 +397,7 @@
   background: "#CCF"
   image: "[[Image:Dot-se-logo.png]]"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[.SE]] (The Internet Infrastructure Foundation)"
   sponsor: "[[.SE]]"
@@ -414,7 +412,7 @@
   background: "#CCF"
   image: "[[Image:Denic.png|DEnic]]"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[DENIC]]"
   sponsor: "[[DENIC|DENIC eG]]"
@@ -432,7 +430,7 @@
   background: "#CCF"
   name: .ee
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Estonian Internet Foundation
   actualuse: "Extremely popular in Estonia, now available globally"
@@ -444,7 +442,7 @@
   background: "#CCF"
   image: "[[File:.au Domain Administration (logo).svg|auDA]]"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Various
   sponsor: "[[.au Domain Administration]]"
@@ -463,7 +461,7 @@
   background: "#CCF"
   image: "[[Image:Nudomain.png|220px|.nu domain]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[.SE]] (The Internet Infrastructure Foundation)"
   sponsor: Internet Users Society - Niue
@@ -472,7 +470,7 @@
   restrictions: None
   structure: Registrations permitted at second level
   document: "[http://www.nunames.nu/about/terms.cfm Terms and conditions]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nunames.nu/ NuNames]"
   dnssec: "yes"
 .to:
@@ -480,7 +478,7 @@
   background: "#CCF"
   image: "[[Image:Tonic.png|tonic Domain Name Registry]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Tonga Network Information Center]] (Tonic)"
   sponsor: "[[Government of Tonga]]"
@@ -496,7 +494,7 @@
   background: "#CCF"
   image: "[[Image:Registerbg.png|register.BG|220px]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Register.bg]]"
   sponsor: "[[Register.bg]]"
@@ -511,7 +509,7 @@
   background: "#CCF"
   image: "[[Image:Dotcn.svg|.cn -- China's Internet address]]"
   introduced: "November 28, 1990<ref name=\"chn\">Chinanews.com. \"[http://big5.chinanews.com.cn:89/special/guoqing/60/2009/06-25/122.shtml Chinanews.com].\" 中國接入互聯網. Retrieved on 2009-07-30.</ref>"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[China Internet Network Information Center]]"
   sponsor: "[[Chinese Academy of Sciences]]"
@@ -526,7 +524,7 @@
   background: "#CCF"
   image: "[[Image:Ficora.png|Finnish Communications Regulatory Authority]]"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[FICORA]]"
   sponsor: "[[FICORA]]"
@@ -543,7 +541,7 @@
   background: "#CCF"
   image: "[[File:IEDR logo.svg|150px|Logo of the IE Domain Registry]]"
   introduced: "27 January 1988<ref>[http://www.iana.org/domains/root/db/ie.html IANA - .ie]</ref>"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[IE Domain Registry]]"
   sponsor: "[[University College Dublin]]"
@@ -558,7 +556,7 @@
   background: "#CCF"
   image: "[[Image:Dotpl.png|.pl Internet domain registration|220px]]"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Naukowa i Akademicka Sieć Komputerowa|NASK]]"
   sponsor: "[[Naukowa i Akademicka Sieć Komputerowa|NASK]]"
@@ -574,7 +572,7 @@
   background: "#CCF"
   image: "[[Image:Dotpr.png|.pr Puerto Rico Top Level Domain|220px]]"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Gauss Research Laboratory Inc]]"
   sponsor: "[[Gauss Research Laboratory Inc]]"
@@ -582,7 +580,7 @@
   actualuse: Fairly popular in Puerto Rico
   restrictions: "Some subdomains have restrictions; '''.isla.pr''' is less expensive but limited to Puerto Rico residents"
   structure: Registrations are at third level beneath second level labels; second-level registrations are available at higher cost
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.pr/ Nic.Pr]"
   dnssec: "yes"
 .sk:
@@ -590,7 +588,7 @@
   background: "#CCF"
   image: "[[Image:Sknic.png|SK-NIC]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SK-NIC]]"
   sponsor: "[[SK-NIC]]"
@@ -606,7 +604,7 @@
   name: .ac
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Ascension Island Network Information Centre (run by Internet Computer Bureau)
   sponsor: "[[Cable & Wireless Worldwide|Cable and Wireless]] (Ascension Island)"
@@ -622,7 +620,7 @@
   name: .ad
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Nic.ad
   sponsor: "Servei de Telecommunicacions d'Andorra"
@@ -636,7 +634,7 @@
   name: .ae
   background: "#CCF"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[.aeDA]]"
   sponsor: "[[Telecommunications Regulatory Authority (UAE)|TRA]]"
@@ -652,7 +650,7 @@
   background: "#CCF"
   image: "[[Image:Dotaf.png]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: AFGNIC
   sponsor: "[[Afghanistan]] Ministry of Communications"
@@ -668,7 +666,7 @@
   background: "#CCF"
   image: "[[Image:Nicag.jpg|NicAg]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: NicAg
   sponsor: None
@@ -677,14 +675,14 @@
   restrictions: None
   structure: Names can be registered directly at the second level; third-level registrations are also available under some second-level labels
   document: "[http://www.nic.ag/terms.htm Registration terms and conditions]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.ag/ Nic.ag]"
   dnssec: "yes"
 .ai:
   name: .ai
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Offshore Information Services]]"
   sponsor: "[[Government of Anguilla]]"
@@ -697,7 +695,7 @@
   name: .al
   background: "#CCF"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Electronic and Postal Communications Authority]] (AKEP)"
   sponsor: "[[Electronic and Postal Communications Authority]] (AKEP)"
@@ -713,7 +711,7 @@
   background: "#CCF"
   image: "[[Image:Una logo.jpg|UNA: University of the Netherlands Antilles]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Active (to be phased out and succeeded by [[.cw]] and [[.sx]])"
   registry: "[[University of The Netherlands Antilles]]"
   sponsor: "[[University of The Netherlands Antilles]]"
@@ -726,7 +724,7 @@
   name: .ao
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[University of Agostinho Neto]] (College of Engineering)"
   sponsor: "[[University of Agostinho Neto]]"
@@ -739,7 +737,7 @@
   name: .aq
   background: "#CCF"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Swizzle Limited
   sponsor: Mott and Associates
@@ -755,7 +753,7 @@
   background: "#CCF"
   image: "[[File:Nicar.png|Nic.ar]]"
   introduced: "1987"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC Argentina]]"
   sponsor: "[[Ministry of Foreign Affairs and Worship]]"
@@ -769,7 +767,7 @@
   name: .as
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[AS Domain Registry]]"
   sponsor: "[[AS Domain Registry]]"
@@ -778,14 +776,14 @@
   restrictions: Domains may not be used for pornographic or racist material; registry has right of refusal for all applications
   structure: Registrations are directly at second level
   document: "[http://www.nic.as/policy.cfm Registry policy]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.as/ AS Domain Registry]"
 .aw:
   name: .aw
   background: "#CCF"
   image: "[[File:Setar logo.png]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SetarNV|SETAR]]"
   sponsor: "[[SetarNV|SETAR]]"
@@ -794,13 +792,13 @@
   restrictions: "Domains can only be registered in the name of a person running a one-man business or executing a profession, a partnership or a corporation, an association, a legal entity or an institution which is registered in Aruba."
   structure: "Registrations are directly at second level, or beneath '''.com.aw'''"
   document: "[http://www.setar.aw/images/stories/pdfs/domainrules.pdf Rules and regulations]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.setar.aw/index.php?option=com_content&view=article&id=79&Itemid=361 Setarnet Domain Registrations]"
 .az:
   name: .az
   background: "#CCF"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Azerbaijan Communications
   sponsor: Azerbaijan Communications
@@ -815,7 +813,7 @@
   background: "#CCF"
   image: "[[Image:Nicba.png|nic.ba|220px]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: University Telinformatic Centre
   sponsor: University Telinformatic Centre
@@ -829,7 +827,7 @@
   name: .bb
   background: "#CCF"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Telecoms Unit]]"
   sponsor: "[[Government of Barbados]]"
@@ -844,7 +842,7 @@
   background: "#CCF"
   image: "[[File:Dotax.jpg|Ålands Landskapsregeringen]]"
   introduced: "2006"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Government of Åland|Ålands Landskapsregeringen]]"
   sponsor: "[[Government of Åland|Ålands Landskapsregeringen]]"
@@ -856,7 +854,7 @@
   name: .bd
   background: "#CCF"
   introduced: "1999"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Bangladesh Telecommunications Company Limited]]"
   sponsor: Ministry of Post and Telecommunications - Bangladesh
@@ -872,7 +870,7 @@
   background: "#CCF"
   image: "[[Image:Dnsbe.png|dns.be]]"
   introduced: "1988"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[DNS Belgium]]"
   sponsor: "[[DNS Belgium]]"
@@ -889,7 +887,7 @@
   background: "#CCF"
   image: "[[Image:Logo onatel.png|ONATEL]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[ARCE]]"
   sponsor: "[[Delegational Generale Informatique]] (DELGI)"
@@ -905,7 +903,7 @@
   background: "#CCF"
   image: "[[Image:Inetlogo1.png|inet]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[INET]]"
   sponsor: "[[BATELCO]]"
@@ -919,7 +917,7 @@
   background: "#CCF"
   image: "[[Image:Logo bi re.jpg|.bi Registry]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC.BI]] (run by [[CBINET]])"
   sponsor: "[[Burundi National Center of Information Technology]]"
@@ -934,7 +932,7 @@
   name: .bj
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Network Information Center - Benin]]"
   sponsor: "[[Office of Stations and Telecommunications of Benin]]"
@@ -948,7 +946,7 @@
   background: "#CCF"
   image: "[[Image:BERMUDA NIC.jpg|BermudaNIC -- The Bermuda Network Information Center|220px]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Bermuda Network Information Centre]] (BermudaNIC)"
   sponsor: "[[Government of Bermuda]]"
@@ -956,14 +954,14 @@
   actualuse: Gets some use in Bermuda
   restrictions: Must be company or organization registered in Bermuda
   structure: Registrations permitted directly at second level or at third level beneath various labels
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.bermudanic.bm/ www.bermudanic.bm]"
 .bn:
   name: .bn
   background: "#CCF"
   image: "[[Image:Brunet.jpg|BruNet]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[BruNet]]"
   sponsor: "[[Telekom Brunei Berhad]]"
@@ -976,7 +974,7 @@
   name: .bo
   background: "#CCF"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC Bolivia]]"
   sponsor: "[[ADSIB]]"
@@ -990,7 +988,7 @@
   background: "#CCF"
   image: "[[Image:Registrobr.jpg]]"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Registro.br]]"
   sponsor: "[[Comitê Gestor da Internet no Brasil]]"
@@ -1005,7 +1003,7 @@
   background: "#CCF"
   image: "[[Image:Dotbs.png|240px|.bs NIC -- Welcome to the Bahamas Network Information Centre]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[BSNIC]]"
   sponsor: "[[College of the Bahamas]]"
@@ -1014,14 +1012,14 @@
   restrictions: "None, except in a few of the third-level registrations such as '''.gov.bs'''"
   structure: "Registrations are taken directly at the second level, or at the third level beneath various second-level labels"
   document: "[http://www.register.bs/terms.html Registration terms]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.register.bs/ BSNIC]"
 .bt:
   name: .bt
   background: "#CCF"
   image: "[[Image:Btnic.jpg|BTNIC]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: ".bt NIC, operated by [[DrukNet]], a service of [[Bhutan Telecom]]"
   sponsor: "[[Bhutan Ministry of Information and Communications]]"
@@ -1036,7 +1034,7 @@
   background: "#CCF"
   image: "[[File:.bv logo.svg|100px]]"
   introduced: 21 August 1997
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Inactive, but still in root"
   registry: "[[Norid]]"
   sponsor: "[[Norwegian Post and Telecommunications Authority]]"
@@ -1051,7 +1049,7 @@
   name: .bw
   background: "#CCF"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Unknown
   sponsor: "[[University of Botswana]]"
@@ -1065,7 +1063,7 @@
   name: .by
   background: "#CCF"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Reliable Software Inc.
   sponsor: The Operative-analytical center of the Republic of Belarus
@@ -1080,7 +1078,7 @@
   background: "#CCF"
   image: "[[Image:Dotbz.jpg|.bz]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Belize Network Information Center]] (managed by [[University Management Ltd]]"
   sponsor: "[[University of Belize]]"
@@ -1088,7 +1086,7 @@
   actualuse: "Used for a random assortment of sites, many not in Belize"
   restrictions: None
   structure: Registrations can be made directly at the second level as well as at the third level beneath various second level labels
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.belizenic.bz/ Belizenic]"
   dnssec: "yes"
 .cc:
@@ -1096,7 +1094,7 @@
   background: "#CCF"
   image: "[[File:Enic.png|eNIC – a VeriSign company]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Inactive
   registry: "eNIC (a [[VeriSign]] company)"
   sponsor: Island Internet Services
@@ -1105,14 +1103,14 @@
   restrictions: None
   structure: Registrations permitted at second level
   document: "[http://www.enomcentral.com/terms/agreement.aspx Registration agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.verisign.com/domain-name-services/domain-name-registries/cc-domain-names/index.html eNIC]"
 .cf:
   name: .cf
   background: "#CCF"
   image: "[[File:SOCATEL.png|SOCATEL]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Central African Society of Telecommunications]] (SOCATEL)"
   sponsor: "[[Central African Society of Telecommunications]] (SOCATEL)"
@@ -1124,7 +1122,7 @@
   name: .cg
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Interpoint Switzerland]]"
   sponsor: "[[ONPT Congo]]"
@@ -1139,7 +1137,7 @@
   background: "#CCF"
   image: "[[Image:SWITCH Logo.png|SWITCH Logo]]"
   introduced: "1987"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SWITCH Information Technology Services]]"
   sponsor: "[[SWITCH Information Technology Services]]"
@@ -1155,7 +1153,7 @@
   name: .eh
   background: "#f0fff0"
   introduced: Not officially assigned
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Unassigned
   registry: None
   sponsor: None
@@ -1166,7 +1164,7 @@
   name: .kp
   background: "#f0fff0"
   introduced: "2007"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   sponsor: "[[Korea Computer Center]]"
   intendeduse: "Entities connected with<br />{{PRK}}"
@@ -1177,7 +1175,7 @@
   background: "#CCF"
   image: "[[Image:Coat of arms of East Timor.svg|East Timor coat of arms|140px]]"
   introduced: "2005"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Active; in transition from former ccTLD [[.tp]]"
   registry: "[[Timor-Leste NIC]]"
   sponsor: "[[Timor-Leste Ministry of Transport, Communications and Public Works]]"
@@ -1193,7 +1191,7 @@
   background: "#CCF"
   image: "[[File:Dotjp.png|.jp]]"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Japan Registry Service]]"
   sponsor: "[[JPNIC]]"
@@ -1211,7 +1209,7 @@
   name: .ws
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SamoaNIC]] ([[Computer Services Ltd. Samoa]])"
   sponsor: "[[Government of Samoa]]"
@@ -1220,14 +1218,14 @@
   restrictions: None
   structure: Registrations are directly at second level
   document: "[http://www.samoanic.ws/legal/ Policies]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.SamoaNIC.ws/ www.SamoaNIC.ws]"
 .tm:
   name: .tm
   background: "#CCF"
   image: "[[Image:Nictm.png|NIC.TM -- .TM Domain Registry]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "NIC.TM (run by [[Internet Computer Bureau]])"
   sponsor: "TM Domain Registry ([[NetNames]])"
@@ -1244,7 +1242,7 @@
   background: "#CCF"
   image: "[[File:Dot MN domain registry (logo).png|.mn Domain Registry]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[.MN Registry]]"
   sponsor: "[[.MN Registry, Datacom]]"
@@ -1253,7 +1251,7 @@
   restrictions: Individual registrants must be over 18 years old; no other restrictions
   structure: Registrations are directly at second level
   document: "[http://file.domain.mn/REGISTRATION_AGREEMENT.pdf Registration Agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.mn/ .mn domain name registry]"
   dnssec: "yes"
 .sj:
@@ -1261,7 +1259,7 @@
   background: "#CCF"
   image: "[[File:.sj logo.svg|100px]]"
   introduced: 21 August 1997
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Inactive, but still in root"
   registry: "[[Norid]]"
   sponsor: Norid
@@ -1277,7 +1275,7 @@
   background: "#CCF"
   image: "[[Image:Imtitle.png|im domain registry|220px]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Domicilium]]"
   sponsor: "[[Government of the Isle of Man]]"
@@ -1292,7 +1290,7 @@
   name: .cs
   background: "#CCC"
   introduced: ca. 1990
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Discontinued
   registry: None
   sponsor: None
@@ -1307,7 +1305,7 @@
   background: "#CCF"
   image: "[[Image:Channelisles logo.png|Channelisles.net logo|220px]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Island Networks (Registrar) Ltd
   sponsor: Island Networks (Jersey) Ltd.
@@ -1322,7 +1320,7 @@
   background: "#CCF"
   image: "<!-- Image with inadequate rationale removed: [[Image:Rucenter.gif|RUcenter]] -->"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Russian Institute for Public Networks]]"
   sponsor: "[[Russian Institute for Public Networks]]"
@@ -1341,7 +1339,7 @@
   background: "#CCF"
   image: "[[Image:Tp-dom.png|.tp Domain Registration]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Active but being phased out in favour of new ccTLD, [[.tl]]"
   registry: "[[Timor-Leste NIC]]"
   sponsor: "[[Laleia]]"
@@ -1354,7 +1352,7 @@
   background: "#CCF"
   image: "[[File:Dotyu.jpg|nic.yu yugoslav internet domain registry|220px]]"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Discontinued
   registry: nic.yu (Yugoslav Internet Domain Registry)
   sponsor: YUNET Association
@@ -1369,7 +1367,7 @@
   background: "#CCF"
   image: "[[Image:Dotsa.png|.sa]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Communications and Information Technology Commission (Saudi Arabia)|Communications and Information Technology Commission]] (SaudiNIC Unit)"
   sponsor: "[[Communications and Information Technology Commission (Saudi Arabia)|Communications and Information Technology Commission]]"
@@ -1399,7 +1397,7 @@
   background: "#CCF"
   image: "[[Image:dotkn.png|.kn]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[University of Puerto Rico]]"
   sponsor: "[[University of Puerto Rico]]"
@@ -1414,7 +1412,7 @@
   name: .gd
   background: "#CCF"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[http://www.nic.gd nicGD]"
   sponsor: "[http://www.ntrc.gd/ The National Telecommunications Regulatory Commission]"
@@ -1429,7 +1427,7 @@
   name: .gy
   background: "#CCF"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[University of Guyana]]"
   sponsor: "[[University of Guyana]]"
@@ -1440,7 +1438,7 @@
   name: .kh
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Ministry of Post and Telecommunications of Cambodia
   sponsor: Ministry of Post and Telecommunications of Cambodia
@@ -1454,7 +1452,7 @@
   name: .th
   image: "[[File:Dotth.png|THNIC]]"
   introduced: "1988"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[THNIC]]"
   sponsor: "[[THNIC]]"
@@ -1471,7 +1469,7 @@
   background: "#CCF"
   image: "[[Image:Israel-internet-association.png|Israel Internet Association]]"
   introduced: "1985"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Israel Internet Association]]"
   sponsor: "[[Internet Society of Israel]]"
@@ -1486,7 +1484,7 @@
   background: "#CCF"
   image: "[[File:Sgnic.png|SGNIC]]"
   introduced: "1988"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SGNIC]]"
   sponsor: "[[SGNIC]]"
@@ -1501,7 +1499,7 @@
   name: .ro
   introduced: 23 May 1991
   image: "[[File:Rotld_logo.png]]"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Romanian National R&D Computer Network|RNC]]"
   sponsor: "[[National Institute for R&D in Informatics]]"
@@ -1510,14 +1508,14 @@
   restrictions: "None for '''.ro''', some second-level domains are reserved, e.g. '''.com.ro''', '''.org.ro''', and special rules apply for them"
   structure: "Registrations are allowed at the second level, and also at the third level under generic-category 2nd level domains"
   document: "[http://rotld.ro/portal/pages/en/1/ Registration agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.rotld.ro/ RoTLD.ro]"
 .nz:
   name: .nz
   background: "#CCF"
   image: "[[File:NZRS logo.png|NZ Registry Services .nz]]"
   introduced: "1987"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   dnssec: "Yes"
   registry: "[[NZ Registry Services]]"
@@ -1533,7 +1531,7 @@
   background: "#CCF"
   image: "[[Image:Dotes.png|.es -- Agente Registrador RED.ES]]"
   introduced: "1988"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[ESNIC]]"
   sponsor: "[[Red.es]]"
@@ -1549,7 +1547,7 @@
   background: "#CCF"
   image: "[[Image:CZ.NIC logo.png|CZ NIC]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[CZ.NIC]]"
   sponsor: "[[CZ.NIC]]"
@@ -1565,7 +1563,7 @@
   background: "#CCF"
   image: "[[Image:Emblem of the Papacy.svg|Vatican crest|150px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "Internet Office of the [[Holy See]]"
   sponsor: "[[Holy See]] [[Secretariat of State (Vatican)|Secretariat of State]]"
@@ -1579,7 +1577,7 @@
   name: .cx
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Christmas Island Internet Administration]] (CIIA)"
   sponsor: "[[Christmas Island Internet Administration]] (CIIA)"
@@ -1611,7 +1609,7 @@
   background: "#CCF"
   image: "<!--  Commented out because image was deleted: [[Image:Zadna.gif|ZADNA]] -->"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: ZADNA
   sponsor: ZADNA
@@ -1626,7 +1624,7 @@
   name: .um
   background: "#f0fff0"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Changed to unassigned by ICANN action in 2007, deleted from root zone as of April 20, 2008"
   registry: United States Minor Outlying Islands Registry
   sponsor: "Was [[University of Southern California]] [[Information Sciences Institute]]"
@@ -1640,7 +1638,7 @@
   image: "[[File:DotCO logo.svg|150px|.co]]"
   background: "#CCF"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: ".CO Internet S.A.S,  [[Bogotá]], [[Colombia]]"
   sponsor: None
@@ -1649,7 +1647,7 @@
   restrictions: None
   structure: "Top-level registration now permitted.<ref>[http://www.cointernet.co/frequently-asked-questions/registrant-faqs/co-registrant-domain-and-policy-faqs .CO Registrant Domain and Policy FAQs].  Copyright 2010 .CO Internet S.A.S.</ref>"
   document: "Applicable to second-level domains [http://www.cointernet.co/sites/default/files/documents/CO_Sunrise_Launch%26Registration_1.4.pdf Launch and Registration Rules (in English)]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "http://www.go.co/"
   dnssec: "yes"
 .cr:
@@ -1657,7 +1655,7 @@
   background: "#CCF"
   image: "[[Image:Dotcr.png|.cr]]"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC-Internet Costa Rica]]"
   sponsor: "[[Costa Rica National Academy of Sciences]]"
@@ -1671,7 +1669,7 @@
   background: "#CCF"
   image: "[[Image:Dotcu.jpg|.cu -- Cuba-NIC]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Cuba-NIC]]"
   sponsor: "[[CENIAInternet]]"
@@ -1685,7 +1683,7 @@
   name: .ki
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Telecommunications Authority of Kiribati]]"
   sponsor: "[[Ministry of Communications, Transport, and Tourism Development]]"
@@ -1698,7 +1696,7 @@
   background: "#CCF"
   image: "[[Image:Oyster logo 20042.png|240px|Oyster TCI Internet Services]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Oyster Internet Services]]"
   sponsor: "[[Telecom Cook Islands]]"
@@ -1706,14 +1704,14 @@
   actualuse: Gets some use on Cook Islands
   restrictions: Companies must use name based on their legal name
   structure: Registrations are made at the third level beneath second-level categories
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.oyster.net.ck/about/index.php?about=domain .ck domain registration]"
 .cl:
   name: .cl
   background: "#CCF"
   image: "[[Image:Nic-chile.png|NIC Chile]]"
   introduced: "1987<ref name=carta />"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC Chile]]"
   sponsor: "[[University of Chile]]"
@@ -1732,7 +1730,7 @@
   name: .cm
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Camtel]]"
   sponsor: "[[Camtel]]"
@@ -1747,7 +1745,7 @@
   background: "#CCF"
   image: "[[Image:Nicci.png|nic.ci|220px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Network Information Center - Côte d'Ivoire]]"
   sponsor: "[[Institut National Polytechnique Felix Houphouet Boigny]]"
@@ -1761,7 +1759,7 @@
   name: .cv
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Agência Nacional das Comunicações (ANAC)
   intendeduse: "Entities connected with {{CPV}}"
@@ -1774,7 +1772,7 @@
   background: "#CCF"
   image: "[[Image:Ucyprus.png|University of Cyprus]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[University of Cyprus]]"
   sponsor: "[[University of Cyprus]]"
@@ -1783,14 +1781,14 @@
   restrictions: Limited to Cyprus residents and registered companies/organizations; various restrictions for different subdomains
   structure: Registrations are taken at third level beneath some second-level labels
   document: "[http://www.ocecpr.org.cy/media/documents/Legislation/EC_Order_DomainNames_GR_KDP380-2005_05-08-2005_PH.doc Legislation on .cy domain names]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.cy/ nic.cy]"
 .dj:
   name: .dj
   background: "#CCF"
   image: "[[Image:Dotdj.png|WWW.DJ|220px]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[dotDJ]]"
   sponsor: "[[Societe de Telecommunications Internationales de Djibouti|STID]] (Djibouti Telecom)"
@@ -1806,7 +1804,7 @@
   background: "#CCF"
   image: "[[File:.dk hostmaster logo.png]]"
   introduced: "1987"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[DK Hostmaster]]"
   sponsor: "[[Dansk Internet Forum]]"
@@ -1823,7 +1821,7 @@
   background: "#CCF"
   image: "[[Image:Dotdm.png|.dm]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[DotDM Corporation]]"
   sponsor: "[[University of Puerto Rico]]"
@@ -1839,7 +1837,7 @@
   background: "#CCF"
   image: "[[Image:Nicdo.png|ns.nic.do|220px]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Dominican Republic NetWorks Information Center]]"
   sponsor: "[[Pontificia Universidad Catolica Madre y Maestra]]"
@@ -1852,7 +1850,7 @@
   background: "#CCF"
   image: "[[Image:Dotdz.png|NIC.DZ]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: NIC.DZ
   sponsor: CERIST
@@ -1866,7 +1864,7 @@
   background: "#CCF"
   image: "[[Image:Afnic.png|.fr -- AFNIC]]"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[AFNIC]]"
   sponsor: "[[AFNIC]]"
@@ -1884,7 +1882,7 @@
   background: "#CCF"
   image: "[[Image:Dotfo.jpg|.fo]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: FO Council
   sponsor: FO Council
@@ -1899,7 +1897,7 @@
   name: .fk
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Falkland Islands Development Corporation]]"
   sponsor: "[[Falkland Islands Government]]"
@@ -1913,7 +1911,7 @@
   background: "#CCF"
   image: "[[Image:Dotfj.png|FJ Domain Registry|220px]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[University of the South Pacific]]"
   sponsor: University of the South Pacific
@@ -1928,7 +1926,7 @@
   background: "#CCF"
   image: "[[Image:Nicec.png|nic.ec]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[EcuaNet]]"
   sponsor: "[[NICEC]]"
@@ -1937,13 +1935,13 @@
   restrictions: Some third-level registrations have restrictions depending on second-level name they are within
   structure: "Registrations are made directly at the second level, or at third level beneath some second-level labels"
   document: "[http://www.nic.ec/eng/politicas/default.htm Policies]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.ec/ nic.ec]"
 .eg:
   name: .eg
   background: "#CCF"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Egyptian Universities Network]]"
   sponsor: "[[Egyptian Universities Network]]"
@@ -1955,7 +1953,7 @@
   name: .er
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[EriTel]]"
   sponsor: "[[EriTel]]"
@@ -1969,7 +1967,7 @@
   background: "#CCF"
   image: "[[Image:Etc.jpg|Ethiopian Telecommunications Corporation|300px|Ethiopian Telecommuncations Corporation logo]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "{{nowrap|[[Ethiopian Telecommunications Corporation]]}}"
   sponsor: Ethiopian Telecommunications Corporation
@@ -1982,7 +1980,7 @@
   name: .iq
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Communications and Media Commission]]"
   sponsor: "[[Iraqi Communications and Media Commission]]"
@@ -1998,7 +1996,7 @@
   background: "#CCF"
   image: "[[Image:.id.svg|90px]]"
   introduced: 1993 (Fully operational in 1996)
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: PANDI
   sponsor: Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI)
@@ -2013,7 +2011,7 @@
   background: "#CCF"
   image: "[[Image:TWNIC Logo.png|TWNIC Logo]]"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[TWNIC]]"
   sponsor: "[[TWNIC]]"
@@ -2030,7 +2028,7 @@
   background: "#CCF"
   image: "[[Image:.omlogo.jpg|Domain Name Administration]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Telecommunication Regulatory Authority-Oman]]"
   document: "[http://www.registry.om/om/en/?page_id=381 Policy]"
@@ -2063,7 +2061,7 @@
   restrictions: Registrants must be approved as being members of the postal community before registering domains
   document: "[http://www.icann.org/tlds/stld-apps-19mar04/post.htm/ ICANN New sTLD RFP Application]; [http://www.icann.org/en/about/agreements/registries/post .Post Sponsored TLD Agreement]"
   structure: Full authentication of verification of eligible registrants with structured naming rules for second and third-level registrations.
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "{{URL|www.info.post}}"
   dnssec: "yes"
 .pro:
@@ -2087,7 +2085,7 @@
   background: "#CCF"
   image: "[[Image:Dotga.png]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Gabon Telecom]]"
   sponsor: "[[Gabon Telecom]]"
@@ -2102,7 +2100,7 @@
   background: "#CCF"
   image: "<!-- Image with inadequate rationale removed: [[Image:Afnic.png|.fr -- AFNIC]] -->"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   registry: "[[AFNIC]]"
   sponsor: "[[AFNIC]]"
   intendeduse: "Entities connected with {{flag|Wallis and Futuna|local}}"
@@ -2114,7 +2112,7 @@
   background: "#CCF"
   image: "[[Image:Ynet logo.jpg|Ynet|240px]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[YemenNet]]"
   sponsor: "[[TeleYemen]]"
@@ -2127,7 +2125,7 @@
   background: "#CCF"
   image: "<!-- Image with inadequate rationale removed: [[Image:Afnic.png|.fr -- AFNIC]] -->"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Active, accepting registrations"
   registry: "[[AFNIC]]"
   sponsor: "[[AFNIC]]"
@@ -2141,7 +2139,7 @@
   background: "#CCF"
   image: "[[File:Zimbabwe Internet Service Providers Association (logo).png|ZISPA: Zimbabwe Internet Service Providers Association|220px]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[ZISPA]]"
   sponsor: "[[Telecommunications Regulatory Authority (UAE)|Telecommunications Regulatory Authority]]"
@@ -2156,7 +2154,7 @@
   background: "#CCF"
   image: "[[Image:Zamnet.png|ZAMNET]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[ZAMNET|ZAMNET Communication Systems Ltd.]]"
   sponsor: "[[ZAMNET|ZAMNET Communication Systems Ltd.]]"
@@ -2171,7 +2169,7 @@
   background: "#CCF"
   image: "[[Image:Internet-qatar.png|Internet Qatar]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Internet Qatar]]"
   sponsor: "[[Qatar Telecom]] (Q-Tel)"
@@ -2187,7 +2185,7 @@
   name: .vc
   background: "#CCF"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Ministry of Telecommunications, Science, Technology and Industry]] (operated by [[Afilias]])"
   sponsor: "[[Ministry of Telecommunications, Science, Technology and Industry]]"
@@ -2201,7 +2199,7 @@
   background: "#CCF"
   image: "[[Image:Dotve.png|.ve]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Comisión Nacional de Telecomunicaciones]]"
   sponsor: "[[Comisión Nacional de Telecomunicaciones]]"
@@ -2215,7 +2213,7 @@
   name: .VG
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[KSregistry GmbH]]"
   sponsor: "[[Telecommunications Regulatory Commission of the Virgin Islands]]"
@@ -2230,7 +2228,7 @@
   background: "#CCF"
   image: "[[Image:Nicvi.png|nic.vi]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Virgin Islands Public Telecommunication System]]"
   sponsor: "[[Virgin Islands Public Telecommunication System]]"
@@ -2259,7 +2257,7 @@
   background: "#CCF"
   image: "[[File:Vu.nic (logo).png|isnic|240px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Telecom Vanuatu Limited]]"
   sponsor: "[[Telecom Vanuatu Limited]]"
@@ -2273,7 +2271,7 @@
   background: "#CCF"
   image: "[[Image:Dotua.png|ua ccTLD]]"
   introduced: "December 1, 1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   dnssec: "Yes"
   registry: "[[Hostmaster Ltd.]]"
@@ -2288,7 +2286,7 @@
   background: "#CCF"
   image: "[[Image:Uol header.jpg|Uganda Online|220px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Uganda Online]]"
   sponsor: "[[Uganda Online]]"
@@ -2297,14 +2295,14 @@
   restrictions: None
   structure: Registrations may be made at second level or at third level beneath various second level labels
   document: "[https://www.registry.co.ug/?q=terms Terms and conditions]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.registry.co.ug/ Uganda Online registry]"
   dnssec: "yes"
 .uy:
   name: .uy
   background: "#CCF"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Servicio Central de Informatica]]"
   sponsor: "[[Universidad de la República]]"
@@ -2318,7 +2316,7 @@
   name: .uz
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[UZINFOCOM]]"
   sponsor: "[[UZINFOCOM]]"
@@ -2332,7 +2330,7 @@
   background: "#CCF"
   image: "[[Image:Dotjm.gif|JM]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[University of West Indies]]"
   sponsor: "[[University of West Indies]]"
@@ -2346,7 +2344,7 @@
   background: "#CCF"
   image: "<!-- Unsourced image removed: [[Image:NITC-Logo.gif|JORDAN-NITC]] -->"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[http://www.dns.jo DNS]"
   sponsor: "[http://www.nitc.gov.jo NITC]"
@@ -2362,7 +2360,7 @@
   background: "#CCF"
   image: "<!-- Image with inadequate rationale removed: [[Image:Afnic.png|.fr -- AFNIC]] -->"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[AFNIC]]"
   sponsor: "[[AFNIC]]"
@@ -2379,7 +2377,7 @@
   background: "#CCF"
   image: "[[Image:CCTLD RU logo ru.svg|220px|]]"
   introduced: 7 April 1994
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Coordination Center for TLD RU]]"
   intendeduse: Entities connected with Russia
@@ -2395,7 +2393,7 @@
   name: .rw
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[RICTA]]"
   sponsor: "[[RICTA]]"
@@ -2410,7 +2408,7 @@
   image: "[[Image:Dotin.jpg|.in]]"
   background: "#CCF"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[INRegistry]]"
   sponsor: "[[National Internet Exchange of India]]"
@@ -2427,7 +2425,7 @@
   background: "#CCF"
   image: "[[Image:Nicio.png|NIC.IO -- .IO Domain Registry]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "NIC.IO (run by [[Internet Computer Bureau]])"
   sponsor: "IO Top Level Domain Registry ([[Cable & Wireless plc|Cable and Wireless]])"
@@ -2444,7 +2442,7 @@
   background: "#CCF"
   image: "[[Image:IRNIC Logo.png|IRNIC Logo]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Institute for Studies in Theoretical Physics and Mathematics|Institute for Research in Fundamental Sciences]]"
   sponsor: None
@@ -2459,7 +2457,7 @@
   background: "#CCF"
   image: "[[Image:Dotis.png|isnic]]"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[ISNIC]]"
   sponsor: "[[ISNIC]]"
@@ -2475,7 +2473,7 @@
   background: "#CCF"
   image: "[[Image:Nicit.png|nic.it]]"
   introduced: "1987"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[IT-NIC]]"
   sponsor: "[[Consiglio Nazionale delle Ricerche|IIT-CNR]]"
@@ -2491,7 +2489,7 @@
   background: "#CCF"
   image: "[[Image:Dotnf.png|.nf]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Norfolk Island Internet Registry]]"
   sponsor: "[[Norfolk Island Data Services]]"
@@ -2506,7 +2504,7 @@
   name: .hm
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[HM Domain Registry]]"
   sponsor: "[[HM Domain Registry]]"
@@ -2519,7 +2517,7 @@
   background: "#CCF"
   image: "[[Image:Telegreenland.jpg|TELE Greenland]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[TELE Greenland]]"
   sponsor: TELE Greenland A/S
@@ -2533,7 +2531,7 @@
   name: .li
   background: "#CCF"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SWITCH Teleinformatics Services]]"
   sponsor: "[[University of Liechtenstein]]"
@@ -2546,7 +2544,7 @@
   name: .si
   background: "#CCF"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[ARNES]]"
   sponsor: "[[Republic of Slovenia]]"
@@ -2565,7 +2563,7 @@
   background: "#CCF"
   image: "[[Image:Dothr.png|.hr]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[CARNet]]"
   sponsor: "[[CARNet]]"
@@ -2580,7 +2578,7 @@
   background: "#CCF"
   image: "[[File:MARNet_Macedonian_logo.png|.mk]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[MARNet]]"
   sponsor: "Ministry of Foreign Relations - [[Republic of Macedonia|Macedonia]]"
@@ -2593,7 +2591,7 @@
   background: "#CCF"
   image: "[[File:Monic logo.jpg|MONIC]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[MONIC]]"
   sponsor: "[[Government of Macau]]"
@@ -2608,7 +2606,7 @@
   background: "#CCF"
   image: "<!-- Image with inadequate rationale removed: [[File:Afnic.png|.fr -- AFNIC]] -->"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[AFNIC]]"
   sponsor: "[[AFNIC]]"
@@ -2623,7 +2621,7 @@
   background: "#CCF"
   image: "[[Image:Dothu.png|domain.hu]]"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Council of Hungarian Internet Providers]]"
   sponsor: "[[Council of Hungarian Internet Providers]]"
@@ -2639,7 +2637,7 @@
   background: "#CCF"
   image: "[[Image:NictrLogo150x80.png|nic.tr logo]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Middle East Technical University]]"
   sponsor: "[[Middle East Technical University]] Computer Center DNS Group"
@@ -2653,7 +2651,7 @@
   background: "#CCF"
   image: "[[Image:Georgian Domain Name Registry logo.png|The Georgian Domain Name Registry|240px]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Caucasus Online]]"
   sponsor: "[[Caucasus Online]]"
@@ -2668,7 +2666,7 @@
   background: "#CCF"
   image: Flag of French Guiana.svg
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Net Plus]]"
   sponsor: Net Plus
@@ -2680,7 +2678,7 @@
   background: "#CCF"
   image: "[[Image:Ghnic.png|gh.nic]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Ghana Network Information Center]]"
   sponsor: "[[Network Computer Systems]]"
@@ -2688,14 +2686,14 @@
   actualuse: Gets some use in Ghana
   restrictions: "Company must be registered in Ghana, and domain administrator must be located there"
   structure: Registrations are at third level beneath second-level labels; second-level registrations were formerly taken
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.gh/ GhNIC]"
 .gi:
   name: .gi
   background: "#CCF"
   image: "[[Image:Dotgi.png|.gi]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[GibNet]]"
   sponsor: "[[GibNet]]"
@@ -2712,7 +2710,7 @@
   background: "#CCF"
   image: "<!--  Commented out: [[Image:Gambia-nic.jpg|NetPlus|240px]] -->"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[GM-NIC]]"
   sponsor: "[[GM-NIC]]"
@@ -2726,7 +2724,7 @@
   name: .mx
   background: "#CCF"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   dnssec: "No"
   registry: "[[NIC México]]"
@@ -2745,7 +2743,7 @@
   background: "#CCF"
   image: "[[File:Logo_of_MYNIC_Berhad.png|.my]]"
   introduced: "1987"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Malaysia Network Information Centre]] (MYNIC Berhad)"
   intendeduse: "Entities connected with {{flag|Malaysia}}"
@@ -2760,7 +2758,7 @@
   name: .mz
   background: "#CCF"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Centro de Informática da Universidade Eduardo Mondlane]]"
   sponsor: "[[Universidade Eduardo Mondlane]]"
@@ -2773,7 +2771,7 @@
   name: .mm
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Unknown
   sponsor: "[[Ministry of Communications, Posts & Telegraphs]]"
@@ -2786,7 +2784,7 @@
   name: .gn
   background: "#CCF"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[PSGnet]]"
   sponsor: "[[Centre National des Sciences Halieutiques de Boussoura]]"
@@ -2801,7 +2799,7 @@
   background: "#CCF"
   image: "[[Image:nic-gp.png|nic-gp]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Networking Technologies Group]]"
   sponsor: "[[Networking Technologies Group]]"
@@ -2815,7 +2813,7 @@
   name: .gq
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[GETESA]]"
   sponsor: "[[GETESA]]"
@@ -2827,7 +2825,7 @@
   background: "#CCF"
   image: "[[Image:Dotgr.png|.gr|176px]]"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[FORTH-ICS]]"
   sponsor: "[[Foundation for Research & Technology - Hellas|FORTH]]"
@@ -2842,7 +2840,7 @@
   name: .gs
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Atlantis North Ltd
   sponsor: Government of South Georgia and South Sandwich Islands
@@ -2856,7 +2854,7 @@
   name: .gt
   background: "#CCF"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Universidad del Valle de Guatemala]]"
   sponsor: "[[Universidad del Valle de Guatemala]]"
@@ -2865,14 +2863,14 @@
   restrictions: Some second-level names are restricted to particular types of entities
   structure: Registrations are now available at both second level and at third level beneath various second-level names
   document: "[http://www.gt/politicas.html Policies]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.gt/ GT Domain Registry]"
 .gu:
   name: .gu
   background: "#CCF"
   image: "[[Image:Dotgu.png|Guam Network Information Center - .gu|220px]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Guam Network Information Center]]"
   sponsor: "[[University of Guam]]"
@@ -2885,7 +2883,7 @@
   name: .gw
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[IT & Media University]]"
   sponsor: "[[IT & Media University]]"
@@ -2899,7 +2897,7 @@
   background: "#CCF"
   image: "[[Image:Nichn.png|NIC HN|240px]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Red de Desarrollo Sostenible Honduras]]"
   sponsor: "[[Red de Desarrollo Sostenible Honduras]]"
@@ -2916,7 +2914,7 @@
   background: "#CCF"
   image: "[[Image:Dotht logo.png|.ht]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Réseau de Développement Durable d'Haïti]]"
   sponsor: "[[Consortium FDS/RDDH]]"
@@ -2931,7 +2929,7 @@
   background: "#CCF"
   image: "[[Image:Dotke.png|200px|.ke -- You are Kenyan, are you dot ke?]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[KeNIC]]"
   sponsor: "[[KeNIC]]"
@@ -2940,14 +2938,14 @@
   restrictions: Registration under some second-level labels requires supporting documents
   structure: Registrations are at third level beneath second level labels
   document: "[http://www.kenic.or.ke/index.php?option=com_content&task=view&id=15&Itemid=39 Policies]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.kenic.or.ke/ KeNIC]"
 .kg:
   name: .kg
   background: "#CCF"
   image: "[[Image:Dkglogo.png|Kyrgyzstan domain registration service]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[AsiaInfo Telecommunication Enterprise]]"
   sponsor: "[[AsiaInfo Telecommunication Enterprise]]"
@@ -2963,7 +2961,7 @@
   name: .km
   background: "#CCF"
   introduced: "1998"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Comores Telecom]], registry operated by [[VeriSign]]"
   sponsor: "[[Comores Telecom]]"
@@ -2977,7 +2975,7 @@
   name: .kr
   background: "#CCF"
   introduced: "1986"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Korea Internet & Security Agency|KISA]]"
   sponsor: "[[Korea Internet & Security Agency|KISA]]"
@@ -2992,7 +2990,7 @@
   background: "#CCF"
   image: "[[Image:Dotkw.png|www.kw]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Kuwait Institute for Scientific Research]]"
   sponsor: "[[Ministry of Communications (Kuwait)]]"
@@ -3007,7 +3005,7 @@
   background: "#CCF"
   image: "[[Image:icta logo.jpg|ICTA]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Information and Communications Technology Authority]]"
   sponsor: "[[Information and Communications Technology Authority]]"
@@ -3016,14 +3014,14 @@
   restrictions: "Must be a resident or registered company in the Cayman Islands, and have a local address"
   structure: "Registrations are made directly at second level, or at third level beneath several second-level names"
   document: "[http://www.icta.ky/da_ky_dom_pol.php Policies]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.icta.ky/da_ky.php Registry site]"
 .so:
   name: .so
   background: "#CCF"
   image: "[[File:Somdomdotso.jpg|.so Internet domain registration]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: .SO Registry
   sponsor: "Ministry of Post and Telecommunications, Somalia"
@@ -3038,7 +3036,7 @@
   background: "#CCF"
   image: "[[Image:Kaznic.png|KazNIC]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[KazNIC]]"
   sponsor: "[[Association of IT Companies of Kazakhstan]]"
@@ -3054,7 +3052,7 @@
   background: "#CCF"
   image: "[[Image:Dotla.png|.la]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: LA Names Corporation
   sponsor: Lao National Internet Committee
@@ -3063,7 +3061,7 @@
   restrictions: "None; some names are reserved as \"premium names\" at extra cost"
   structure: Registrations are taken directly at the second level
   document: "[http://www.icann.org/cctlds/la/ ICANN .la MoU]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.la/ www.la]"
   dnssec: "yes"
 .lb:
@@ -3071,7 +3069,7 @@
   background: "#CCF"
   image: "<!-- Image with inadequate rationale removed: [[Image:American University of Beirut.gif|AUB - American University of Beirut]] -->"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Lebanese Domain Registry]] (LBDR)"
   sponsor: "[[American University of Beirut]]"
@@ -3085,7 +3083,7 @@
   name: .lc
   background: "#CCF"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC.LC]]"
   sponsor: "[[University of Puerto Rico]]"
@@ -3101,7 +3099,7 @@
   background: "#CCF"
   image: "[[Image:.lk.png|.lk]]"
   introduced: "1990"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[http://www.nic.lk LK Domain Registry]"
   sponsor: LK Domain Registry
@@ -3115,7 +3113,7 @@
 .lr:
   name: .lr
   background: "#CCF"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Randy Bush
   sponsor: "[[RGnet, LLC]]"
@@ -3129,7 +3127,7 @@
   background: "#CCF"
   image: "<!-- not top level [[Image:Dotls.jpg|.org and .co.ls domain registrations|240px]] -->"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Rhodes University]]"
   sponsor: "[[Lesotho Communications Authority]]"
@@ -3142,7 +3140,7 @@
   background: "#CCF"
   image: "[[Image:Dotlt.png|www.DomReg.lt]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Kaunas University of Technology]]"
   sponsor: "[[Kaunas University of Technology]]"
@@ -3158,7 +3156,7 @@
   background: "#CCF"
   image: "[[Image:Dns-lu.png|DNS-LU|240px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[DNS-LU]]"
   sponsor: "[[RESTENA]]"
@@ -3173,7 +3171,7 @@
   background: "#CCF"
   image: "[[Image:Lvnic.png|.lv NIC]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   dnssec: "Yes"
   registry: "[[IMCS UL|Institute of Mathematics and Computer Science]]"
@@ -3190,7 +3188,7 @@
   background: "#CCF"
   image: "[[Image:Nicly.png|Nic.ly]]"
   introduced: "1988"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC.LY]]"
   registrar: "[[LIBYANSPIDER.COM]]"
@@ -3206,7 +3204,7 @@
   background: "#CCF"
   image: "[[Image:Nicma.png|NIC.ma]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Maroc Telecom]]"
   sponsor: "[[Agence Nationale de Réglementation des Télécommunications]]"
@@ -3222,7 +3220,7 @@
   background: "#CCF"
   image: "[[Image:Nicmc.png|NIC Monaco|240px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Direction des Telecommunications]]"
   sponsor: "[[Direction des Telecommunications]]"
@@ -3237,7 +3235,7 @@
   background: "#CCF"
   image: "[[Image:Dotmd.png|220px|.md]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[MoldData]] S.E."
   sponsor: "[[MoldData]] S.E."
@@ -3249,7 +3247,7 @@
   refregistereddomains: "<ref>{{cite web |url=http://www.nic.md/|title=nic.md (.MD Domain Registry)|publisher=nic.md|accessdate=2013-11-27}}</ref>"
   structure: Registrations are taken directly at the second level
   document: "[http://www.nic.md/terms.php Terms and conditions]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.md/ nic.md]"
   dnssec: "no"
 .mg:
@@ -3257,7 +3255,7 @@
   background: "#CCF"
   image: "[[File:Nic-mg.png|NIC-MG|240px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Network Information Center Madagascar]]"
   sponsor: "[[Network Information Center Madagascar]]"
@@ -3271,7 +3269,7 @@
   name: .mh
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Inactive
   registry: "[[Internet Connect Inc.]]"
   sponsor: "[[Cabinet Office of the Marshall Islands]]"
@@ -3282,7 +3280,7 @@
   name: .ml
   background: "#CCF"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Sotelma]]"
   sponsor: "[[Sotelma]]"
@@ -3296,7 +3294,7 @@
   name: .mp
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active as of January 2009
   registry: "[[Saipan DataCom, Inc.]]"
   sponsor: "[[Saipan DataCom, Inc.]]"
@@ -3311,7 +3309,7 @@
   name: .mq
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: Unknown
   sponsor: "[[SYSTEL]]"
@@ -3325,7 +3323,7 @@
   background: "#CCF"
   image: "<!--  Commented out because image was deleted: [[Image:Nicmr.gif|NIC MR|200px|{{deletable image-caption|1=Sunday, 4 November 2007}}]] -->"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC-Mauritanie]]"
   sponsor: "[[University of Nouakchott]]"
@@ -3339,7 +3337,7 @@
   name: .ms
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[https://secure.domains.mninet.ms/ MNI Networks Ltd]"
   sponsor: "[[Lubimal (MS) Ltd.]]"
@@ -3354,7 +3352,7 @@
   background: "#CCF"
   image: "[[File:Nicmt.png|NIC-MT]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC Malta]]"
   sponsor: "[[NIC Malta]]"
@@ -3370,7 +3368,7 @@
   background: "#CCF"
   image: "[[Image:Dotmu.png|.mu]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[MUNIC]]"
   sponsor: "[[Internet Direct Ltd.]]"
@@ -3385,7 +3383,7 @@
   background: "#CCF"
   image: "<!--  Commented out because image was deleted: [[Image:DhivehiNet logo.png|Dhivehinet]] -->"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[DhivehiNet]]"
   sponsor: "[[Dhiraagu]]"
@@ -3399,7 +3397,7 @@
   background: "#CCF"
   image: "[[Image:Sdnp logo.jpg|Malawi SDNP]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Malawi Sustainable Development Network Programme]]"
   sponsor: "[[Malawi Sustainable Development Network Programme]]"
@@ -3415,7 +3413,7 @@
   background: "#CCF"
   image: "[[Image:Na-nic-logo.png|.NA]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[https://swakop.oamdhina.co.na/ Omadhina Internet Services (cc)]"
   sponsor: "[http://www.na-nic.com.na/ Namibian Network Information Centre (cc) (NA-NiC)]"
@@ -3432,7 +3430,7 @@
   background: "#CCF"
   image: "[[Image:Dotnc.png|NC opt Nouvelle Caledonie]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Office des Postes et Telecommunications]]"
   sponsor: "[[Office des Postes et Telecommunications]]"
@@ -3448,7 +3446,7 @@
   name: .ne
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SONITEL]]"
   sponsor: "[[SONITEL]]"
@@ -3461,7 +3459,7 @@
   background: "#CCF"
   image: "[[File:Nigerian Internet Registration Authority (logo).gif|NIRA]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Nigerian Internet Registration Association]]"
   sponsor: "[[National Information Technology Development Agency]]"
@@ -3477,7 +3475,7 @@
   background: "#CCF"
   image: "[[Image:Dotni.PNG|.ni]]"
   introduced: "1989"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Universidad Nacional de Ingeniería (Nicaragua)]]"
   sponsor: "[[Universidad Nacional de Ingeniería (Nicaragua)]]"
@@ -3485,13 +3483,13 @@
   actualuse: Popular in Nicaragua; co.ni subdomain is being promoted in Northern Ireland with limited success
   structure: Registrations are made at the third level beneath second-level names
   document: "[http://www.nic.ni/normas.htm .ni Rules (Spanish)]; [http://www.nic.co.ni/terms.shtml/ co.ni rules]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.ni/ nic.ni]"
 .no:
   name: .no
   image: "[[File:.no logo.svg|100px]]"
   introduced: "1983"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   dnssec: "No"
   registry: "[[Norid]]"
@@ -3511,7 +3509,7 @@
   background: "#CCF"
   image: "[[Image:Dotnp.jpg|.NP registration -- for your life, for your business|240px]]"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Mercantile Communications Pvt. Ltd.]]"
   sponsor: "[[Mercantile Communications Pvt. Ltd.]]"
@@ -3525,7 +3523,7 @@
   name: .nr
   background: "#CCF"
   introduced: "1998"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[CenpacNet]]"
   sponsor: "[[CenpacNet]]"
@@ -3534,14 +3532,14 @@
   restrictions: .gov.nr and .edu.nr are restricted to appropriate institutions in Nauru; otherwise unrestricted
   structure: Names can be registered directly at second level or at third level under various categories
   document: "[http://cenpac.net.nr/dns/terms.html Registration agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://cenpac.net.nr/ CenpacNet]"
 .pa:
   name: .pa
   background: "#CCF"
   image: "[[Image:Nicpa.png|NIC-Panama ccTLD .pa|220px]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Nic Panama]]"
   sponsor: "[[PANNET]], [[Universidad Tecnologica de Panama]]"
@@ -3550,14 +3548,14 @@
   restrictions: Primary and secondary name servers must be geographically separated
   structure: Registrations are at third level beneath second-level labels
   document: "[http://www.nic.pa/egh/politicas.html Policies (English)]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.pa/ Nic Panama]"
 .pe:
   name: .pe
   background: "#CCF"
   image: "[[Image:Nicpe.png|Nic.pe]]"
   introduced: "November 25, 1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: NIC PE
   sponsor: "[[Red Científica Peruana]]"
@@ -3571,7 +3569,7 @@
   name: .pf
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Service des Postes et Télécommunications]]"
   sponsor: "[[Ministère des Postes et Télécommunications et des sports, chargé]]"
@@ -3585,7 +3583,7 @@
   name: .pg
   background: "#CCF"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Papua New Guinea University of Technology]]"
   sponsor: "[[Papua New Guinea University of Technology]]"
@@ -3600,7 +3598,7 @@
   background: "#CCF"
   image: "[[File:Dotph.jpg|240px|dotPH - The Official Domain Registry of the Philippines]]"
   introduced: "1990"
-  type: "[[country code top-level domain]]"
+  type: cctld
   status: Active
   registry: dotPH Domains Inc.
   sponsor: PH Domain Foundation
@@ -3615,7 +3613,7 @@
   background: "#CCF"
   image: "[[Image:Pknic.jpg|PKNIC]]"
   introduced: "1992"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[PKNIC]]"
   sponsor: "[[PKNIC]]"
@@ -3631,7 +3629,7 @@
   background: "#CCF"
   image: "<!-- Image with inadequate rationale removed: [[Image:Afnic.png|.fr -- AFNIC]] -->"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: En Route but not taking registrations
   registry: "[[AFNIC]]"
   sponsor: "[[AFNIC]]"
@@ -3646,7 +3644,7 @@
   background: "#CCF"
   image: "[[File:Dotpn.png|.pn domain names]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Island Council (Pitcairn)|Pitcairn Island Administration]]"
   sponsor: "[[Island Council (Pitcairn)|Pitcairn Island Administration]]"
@@ -3655,14 +3653,14 @@
   restrictions: None
   structure: "Registrations are made directly at the second level; there are also some third-level registrations, such as under second-level categories like '''.gov.pn''' and personal sites under '''firstname.lastname.pn''' (similar to '''[[.name]]''')"
   document: "[http://www.government.pn/PnRegistry/policies.htm .pn policies]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.government.pn/PnRegistry/PnRegistry.htm .pn registry]"
 .ps:
   name: .ps
   background: "#CCF"
   image: "[[File:niclogo.jpg]]"
   introduced: "2000"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[http://www.pnina.ps PNINA]"
   sponsor: "[http://www.pita.ps/ PITA]"
@@ -3677,7 +3675,7 @@
   background: "#CCF"
   image: "<!-- Deleted image removed: [[Image:Dotpt.png|DNS PT|{{deletable image-caption|1=Thursday, 17 April 2008}}]] -->"
   introduced: "1988"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Associação DNS.PT]]"
   sponsor: "[[Associação DNS.PT]]"
@@ -3691,7 +3689,7 @@
   name: .pw
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[http://registry.pw .PW\_registry]"
   intendeduse: "Entities connected with {{nowrap|{{flag|Palau}}}}"
@@ -3704,7 +3702,7 @@
   background: "#CCF"
   image: "[[Image:Nicpy.jpg|nic.py]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC Paraguay]]"
   sponsor: "[[Centro Nacional de Computación]], [[Universidad Nacional de Asunción]]"
@@ -3718,7 +3716,7 @@
   background: "#CCF"
   image: "[[Image:Sbnic.png|Solomon Islands Network Information Centre|240px]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Solomon Islands Network Information Centre]]"
   sponsor: "[[Solomon Telekom Company Limited]]"
@@ -3732,7 +3730,7 @@
   background: "#CCF"
   image: "[[Image:Dotsc.jpg|.sc|240px]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Victoria Computer Services (Proprietary) Limited|VCS (Pty) Limited]]"
   sponsor: "[[Victoria Computer Services (Proprietary) Limited|VCS (Pty) Limited]]"
@@ -3740,7 +3738,7 @@
   actualuse: "Used for a random assortment of sites, some related to Seychelles; was once marketed as domain for Scotland"
   restrictions: Priority given to Seychelles-based entities; varying restrictions for different third-level registrations
   structure: Registrations are directly at second level or at third level beneath various second-level names
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.sc/ nic.sc]"
   dnssec: "yes"
 .sd:
@@ -3748,7 +3746,7 @@
   background: "#CCF"
   image: "[[Image:Dot sd logo.png|.sd]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Sudan Internet Society]]"
   sponsor: "[[Sudan Internet Society]]"
@@ -3764,7 +3762,7 @@
   background: "#CCF"
   image: "[[Image:Nicsh.png|NIC.SH -- .SH Domain Registry]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "NIC.SH (run by [[Internet Computer Bureau]])"
   sponsor: "Government of [[Saint Helena]]"
@@ -3780,7 +3778,7 @@
   name: .sl
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[AFcom]]"
   sponsor: "[[Sierratel]]"
@@ -3788,14 +3786,14 @@
   actualuse: Not very much used
   restrictions: Registry reserves the right to screen and reject applications
   structure: Registrations permitted at second level
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.sl/domain/ www.nic.sl]"
 .sm:
   name: .sm
   background: "#CCF"
   image: "<!--  Commented out because image was deleted: [[Image:Telecom logo.gif|Telecom ITALIA San Marino]] --><br />'''''Telecom Italia San Marino SpA'''''"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Telecom Italia San Marino]]"
   sponsor: "[[Telecom Italia San Marino]]"
@@ -3811,7 +3809,7 @@
   background: "#CCF"
   image: "[[Image:Dotsn.png|.sn]]"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[NIC Senegal]]"
   sponsor: "[[Cheikh Anta Diop University|Université Cheikh Anta Diop]]"
@@ -3825,7 +3823,7 @@
   background: "#CCF"
   image: "[[Image:Dotsr.jpg|.sr]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Telesur (Suriname)|Telesur]]"
   sponsor: "[[Telesur (Suriname)|Telesur]]"
@@ -3839,7 +3837,7 @@
   background: "#CCF"
   image: "[[Image:Dotst.png|.st]]"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Bahnhof ST Registry]]"
   sponsor: "[[Tecnisys]]"
@@ -3855,7 +3853,7 @@
   background: "#CCF"
   image: "[[Image:Logosvnet.png|SVNet -- El Punto que Se Ve|240px]]"
   introduced: "1994"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SVNet]]"
   sponsor: "[[SVNet]]"
@@ -3869,7 +3867,7 @@
   name: .sy
   background: "#CCF"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Syrian Telecommunications Establishment]]"
   sponsor: "[[Syrian Telecommunications Establishment]]"
@@ -3884,7 +3882,7 @@
   name: .sz
   background: "#CCF"
   introduced: "1993"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[SISPA]]"
   sponsor: "[[University of Swaziland]]"
@@ -3899,7 +3897,7 @@
   name: .tc
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Meridian TLD]]"
   sponsor: "[[Melrex TC]]"
@@ -3913,7 +3911,7 @@
   name: .td
   background: "#CCF"
   introduced: "1997"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Société des télécommunications du Tchad]]"
   sponsor: "[[Société des télécommunications du Tchad]]"
@@ -3925,7 +3923,7 @@
   background: "#CCF"
   image: "[[Image:Dottg.png|Enregistrement de domaine dans la zone .tg|220px]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[C.A.F.E. Informatique et Telecommunications]]"
   sponsor: "[[C.A.F.E. Informatique et Telecommunications]]"
@@ -3938,7 +3936,7 @@
   name: .tj
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Information Technology Center]]"
   sponsor: "[[Information Technology Center]]"
@@ -3947,13 +3945,13 @@
   restrictions: "None; however, residents of Tajikistan have priority in disputes"
   structure: "Registrations are made directly at the second level, or at the third level beneath second-level names"
   document: "[http://www.domain.tj/Docs/rules.pdf Policy]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.tj/ nic.tj]"
 .tn:
   name: .tn
   background: "#CCF"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Agence tunisienne d'Internet]]"
   sponsor: "[[Agence tunisienne d'Internet]]"
@@ -3968,7 +3966,7 @@
   background: "#CCF"
   image: "[[Image:Ttnic.png|ttnic]]"
   introduced: "1991"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Trinidad and Tobago Network Information Centre]] (TTNIC)"
   sponsor: "[[University of the West Indies]] (Faculty of Engineering)"
@@ -3977,13 +3975,13 @@
   restrictions: "None (except under '''.gov.tt''', '''.mil.tt''' and '''.edu.tt''')"
   structure: Registrations permitted directly at second level or at third level beneath various labels
   document: "[http://www.nic.tt/agreement.html Terms and conditions]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.nic.tt/ TTNIC]"
 .tz:
   name: .tz
   background: "#CCF"
   introduced: "1995"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[tzNIC]]"
   sponsor: "[[University of Dar Es Salaam]]"
@@ -3997,7 +3995,7 @@
   name: .zr
   background: "#CCC"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Discontinued
   registry: None
   sponsor: "[[Interpoint SARL]]"
@@ -4027,7 +4025,7 @@
   name: .dd
   background: "#CCC"
   introduced: Never
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Not in use
   registry: None
   sponsor: None
@@ -4051,7 +4049,7 @@
   restrictions: Registrations must be based on legal name of company or organization and should be made by people within the company responsible for human resource management
   structure: Direct second-level registrations are allowed
   document: "[http://www.icann.org/tlds/stld-apps-19mar04/jobs.htm ICANN New sTLD RFP Application]; [http://www.icann.org/tlds/agreements/jobs/ ICANN Sponsorship Agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.goto.jobs/ Goto.jobs]"
 .mobi:
   name: mobi
@@ -4067,7 +4065,7 @@
   restrictions: Adherence to mobile-compatibility style guidelines can be enforced by challenge process
   structure: "Direct second-level registrations are allowed; selected generic second level domains, such as weather and music, are reserved for distribution in an equitable manner which may include auction"
   document: "[http://www.icann.org/tlds/stld-apps-19mar04/mobi.htm ICANN New sTLD RFP Application]; [http://www.icann.org/tlds/agreements/mobi/ ICANN sponsorship agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://mtld.mobi/ MTLD]"
 .nato:
   name: nato
@@ -4167,7 +4165,7 @@
   restrictions: "None; however, new registrations do not seem to be accepted at present"
   structure: Registrations are directly at second level
   document: "[http://www.icann.org/tlds/web1/ Application to ICANN to be admitted to root]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.webtld.com/ The .web registry]"
 .mail:
   name: .mail
@@ -4255,7 +4253,7 @@
   background: "#CCF"
   image: "[[File:RNIDS-logo-en.png|225px]]"
   introduced: "2007"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: RNIDS
   sponsor: RNIDS
@@ -4270,7 +4268,7 @@
   background: "#f0fff0"
   image: "[[Image:domainme.png|85px|Logo of doMEn]]"
   introduced: "2007"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: domain.me (doMEn)
   sponsor: "[[Montenegro]] Government of Montenegro"
@@ -4306,7 +4304,7 @@
   actualuse: "Not in use yet, as it is unapproved and not in root"
   restrictions: Unknown
   structure: Registrations would be taken directly at second level
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "{{URL|http://www.pointbzh.com/}}"
 .berlin:
   name: .berlin
@@ -4322,7 +4320,7 @@
   restrictions: Unknown
   structure: Registrations would be taken directly at second level
   document: "[http://www.icann.org/en/about/agreements/registries/berlin ICANN registry agreement]"
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.dotberlin.de/ dotBERLIN]"
 .lat:
   name: .lat
@@ -4340,7 +4338,7 @@
   name: .bl
   background: "#F0FFF0"
   introduced: "2007{{clarify|date=April 2011}}"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Unassigned
   registry: None
   sponsor: None
@@ -4351,7 +4349,7 @@
   name: .mf
   background: "#F0FFF0"
   introduced: "2007"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Unassigned
   registry: None
   sponsor: None
@@ -4410,7 +4408,7 @@ PuntuLLI:
   sponsor: Asociación puntuLLI
   restrictions: Leonese language and culture web sites
   structure: Registrations would be taken directly at second level
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.puntulli.org www.puntulli.org]"
 .scot:
   name: .scot
@@ -4426,7 +4424,7 @@ PuntuLLI:
   background: "#CCF"
   image: "[[Image:Nicat.png|nic.at]]"
   introduced: "1988"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[nic.at]]"
   sponsor: "[[nic.at]]"
@@ -4504,7 +4502,7 @@ PuntuLLI:
   background: "#CCF"
   image: "[[Image:Channelisles logo.png|Channelisles.net logo|220px]]"
   introduced: "1996"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: "[[Island Networks]]"
   sponsor: "[[Island Networks]]"
@@ -4574,7 +4572,7 @@ AlSaudiah:
   actualuse: "Not in use yet, as it is unapproved and not in root"
   restrictions: Unknown
   structure: Registrations would be taken directly at second level
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.dotfree.com/ dotFree]"
 .cymru:
   name: .cymru
@@ -4605,7 +4603,7 @@ AlSaudiah:
   name: .sx
   background: "#F0FFF0"
   introduced: "2010"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: SX Registry SA B.V.
   sponsor: SX Registry SA B.V.
@@ -4618,7 +4616,7 @@ AlSaudiah:
   name: .bq
   background: "#F0FFF0"
   introduced: "2010"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Unassigned
   registry: None
   sponsor: None
@@ -4629,7 +4627,7 @@ AlSaudiah:
   name: .cw
   background: "#F0FFF0"
   introduced: "2010"
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: Active
   registry: None
   sponsor: "[[University of the Netherlands Antilles]]"
@@ -4656,7 +4654,7 @@ AlSaudiah:
   dnssec: "yes"
 .ss:
   name: .ss
-  type: "[[Country code top-level domain]]"
+  type: cctld
   status: "Registered, but not yet operational<ref name=\"iana\" />"
   sponsor: "Government of [[South Sudan]]"
   intendeduse: "Entities connected with<br>{{flag|South Sudan}}"
@@ -4672,7 +4670,7 @@ AlSaudiah:
   actualuse: Not in use yet
   restrictions: punkt.wien
   structure: punkt.wien GmbH
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.punktwien.at/ punktwien.at]"
 .nyc:
   name: .nyc
@@ -4743,7 +4741,7 @@ AlSaudiah:
   registry: .BIBLE TLD Registry
   sponsor: "[[American Bible Society]]"
   structure: Registrations at second level would be available
-  disputepolicy: "[[UDRP]]"
+  disputepolicy: UDRP
   website: "[http://www.bibletld.org/ BibleTLD.org]"
 .faith:
   name: "faith [[generic top-level domain]]"
@@ -4803,6 +4801,6 @@ AlSaudiah:
   name: .krd
   background: "#CCF"
   introduced: "2014"
-  type: "[[Country code top-level domain]]"
+  type: cctld
 .graphics:
   name: .graphics
