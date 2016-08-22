@@ -2,6 +2,12 @@
 
 A page that describes the feasibility of using certain domain names.
 
+## Project background / status
+
+This was a site I was putting together that would allow you to enter a domain and get information back on whether it would be possible to register it, based on the top-level domain's restrictions. The hard part was in structuring the data for these restrictions, which I was attempting to put together manually in tlds.yaml (described below).
+
+These days, if I want to see what registering a domain would entail, I just enter the domain hack I'm thinking of on [domcomp](https://www.domcomp.com/), and it tells me not only if the domain is registerable or not, but *how much* it would cost to register, and what some *other potential options* could be. As such, this project is now, for all practical purposes, superfluous, and will probably be "pivoted" to something completely different with the same name at some point in the future
+
 ## tlds.yaml structure
 
 ### .intendeduse
