@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stem iZON - Will It Hack?</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Hacking the Stem iZON Camera</h1>
+      <p><small>(initially kicked off by <a href="https://meh.com/forum/topics/stem-izon-2-0-wi-fi-video-monitor#570f929d21a0f48406076eb6">this meh.com forum thread</a>)</small></p>
+      <h2>Background</h2>
+      <p>The Stem iZON was a cheap camera that <a href="https://meh.com">Meh.com</a> sold a while back. What they couldn't sell, they unloaded in Fukobukuro bags of clearance goods, which is how I got mine.</p>
+      <p>iZON has <a href="https://meh.com/forum/topics/farewell-izon">since closed down</a>, so these cameras can't be used through the manufacturer's terrible app-as-a-service any more, but the on-board system is still wide open for personal use - you just need to hack around the bits that the app used to do for you.</p>
+      <h2>Getting started</h2>
+      <p>Plug the camera into a power source. The light on the front should turn on solid orange for about a minute, then start flashing in a pattern of green-green-orange-orange.</p>
+      <p>If your camera doesn't start flashing in this pattern, it's probably configured for an old network: push a paperclip/pin into the "Reset" hole on the back for ten seconds to reset it.</p>
+      <h2>Connecting the camera to you</h2>
+      <p>The first thing we need to do is set up the camera to connect to your network. There are two ways to do this: showing the camera a QR code, or connecting to the camera's own temporary network.</p>
+      <h3>Approach 1: QR Code</h3>
+      <p>Enter the SSID (Wi-Fi network name) and passphrase for your 2.4GHz Wi-Fi network (if your access point puts out both, this would be the one that isn't the 5GHz one), then point the camera at the QR code below:</p>
+      <form id="qrform">
+      <p><label>SSID: <input id="ssid"></label></p>
+      <p><label>Passphrase: <input id="pass"></label></p>
+      <p><small>Note that SSIDs or passphrases containing a semicolon will likely trip up the camera, especially if there are multiple consecutive semicolons, or if the semicolon is at the end of the passphrase. The <a href="https://github.com/zxing/zxing/wiki/Barcode-Contents#wi-fi-network-config-android-ios-11">presumptive spec</a> for this kind of QR code specifies a way to escape them, but the official IZON app doesn't do this (it diverges from the spec in a number of ways, really), meaning that the camera probably can't handle them, either.</small></p>
+      <p class="center"><canvas id="qr" width="0" height="0"></canvas></p>
+      <p>When the camera sees the QR code, its light should start quickly blinking green, then turn off, come back on solid orange, and then slowly blink green. (It might only start blinking green once you've connected in the next step.)</p>
+      <h3>Approach 2: Hotspot</h3>
+      <p>If you can't get the QR code to work (or just don't want to bother), connect to the "STEM" wifi network the camera creates while it waits for a connection (if you do want it to connect to your network, you will need to configure it for your network from the interface we connect to in the next step).</p>
+      <h2>Accessing the camera's interface</h2>
+      <p>If you connected the camera to your Wi-Fi network, it will obtain an IP address via DHCP: you'll need to go to your router's list/table of client devices that have connected to the wireless network and been assigned an IP address via DHCP to find the address of the camera (look for a MAC address that begins <code>00-12-2A</code>).</p>
+      <p>If you connected directly to the camera's hotspot, the camera's IP address will be 192.168.1.99: once you configure it to connect to your Wi-Fi network, you'll need to go back and find the IP address from the DHCP table as described in the previous paragraph.</p>
+      <p>Once you've found the camera's IP, you'll want to connect to <code>/mobileye</code> on that camera, with the username and password <code>admin</code>: if the camera's IP address is <input id="camip" value="192.168.1.99">, then that link will be <a id="camlink" href="http://admin:admin@192.168.1.99/mobileye" target="_blank">http://admin:admin@192.168.1.99/mobileye</a>.</p>
+      <p>(If you want to connect the camera to another Wi-Fi network, the page to do that is at <a id="camwifi" href="http://admin:admin@192.168.1.99/mobileye/settings/settings-wifi.html" target="_blank">http://admin:admin@192.168.1.99/mobileye/settings/settings-wifi.html</a>.)</p>
+      <p>From there, what you do with the camera is up to you: if you're looking for ideas, beyond the Meh thread linked at the top of the page, there's <a href="https://www.rsaconference.com/writable/presentations/file_upload/hta-f03a-eyes-on-izon-surveilling-ip-camera-security.pdf">this presentation from 2014</a> that details some other ways you can get into the camera and mess around with it. Feel free to <a href="mailto:s@stuartpb.com">email me</a> or <a href="https://github.com/stuartpb/willithack.com/pulls">submit a pull request</a> with any further suggestions (especially if someone makes/ports some kind of open-source firmware like <a href="https://github.com/openipcamera/openipc-firmware">OpenIPC</a> to this).</p>
+      <script src="https://cdn.jsdelivr.net/npm/qrcode@1.2.2/build/qrcode.min.js" integrity="sha256-Va3PiF6LtJdbakZYXHqd3RsZE2Yr/rFkj3D4DVfQ/2U=" crossorigin="anonymous"></script>
+      <script src="hackizon.js"></script>
+    </main>
+  </body>
+</html>
