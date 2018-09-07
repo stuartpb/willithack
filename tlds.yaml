@@ -129,7 +129,8 @@ nl:
   registry: SIDN
   sponsor: SIDN
   actualuse: Very popular in the Netherlands
-  structure: Registrations are taken directly at the second level
+  structure:
+    second: open
   document: http://www.nic.nl/ace.php/p,728,2682,10309,regulations-registration_pdf
   disputepolicy: http://www.sidn.nl/ace.php/c,727,5855,,,,Beroep_tegen_beslissingen_van_SIDN.html
   website: http://www.sidn.nl/
@@ -197,7 +198,7 @@ coop:
 edu:
   type: stld
   status: Active
-  registry: Educause (operated by VeriSign)"
+  registry: Educause (operated by VeriSign)
   intendeduse: Educational institutions
   structure:
     second:
